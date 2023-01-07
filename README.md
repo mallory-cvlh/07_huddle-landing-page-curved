@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/mallory-cvlh/07_huddle-landing-page-curved)
+- Live Site URL: [Live](https://mallory-cvlh.github.io/07_huddle-landing-page-curved/)
 
 ## My process
 
