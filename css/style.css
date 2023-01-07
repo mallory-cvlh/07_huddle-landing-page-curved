@@ -1,0 +1,400 @@
+/* ======== */
+/* || RESET */
+/* ======== */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+button,
+input {
+    font: inherit;
+}
+/* ================ */
+/* 1.0 || VARIABLES */
+/* ================ */
+:root {
+    /* 1.1 || Fonts */
+    --ff-heading: 'Poppins', sans-serif;
+    --ff-body: 'Open Sans', sans-serif;
+    --fw-heading: 700;
+    --fw-btn: 600;
+    --fw-body: 400;
+    --fs: 0.938rem;
+
+    /* 1.2 || Colors */
+    --clr-btn: hsl(322, 100%, 66%);
+    --clr-btn-hover: hsl(321, 100%, 78%);
+    --clr-error: hsl(0, 100%, 63%);
+    --clr-body: hsl(192, 100%, 9%);
+    --clr-bg-footer: hsl(192, 100%, 9%);
+    --clr-bg-blue: hsl(207, 100%, 98%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-instagram: hsl(326, 57%, 48%);
+    --clr-facebook: hsl(220, 46%, 48%);
+    --clr-twitter: hsl(203, 89%, 53%);
+    --clr-btn-shadow: hsla(192, 100%, 9%, 0.2);
+
+    /* 1.3 || Padding */
+    --padding-container: 2rem 1.5rem;
+}
+
+/* ====================== */
+/* 2.0 || UTILITY CLASSES */
+/* ====================== */
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* ===================== */
+/* 3.0 || GENERAL STYLES */
+/* ===================== */
+/* 3.1 || Body */
+body {
+    color: var(--clr-body);
+    font-family: var(--ff-body);
+    font-weight: var(--fw-body);
+    min-height: 100vh;
+}
+
+/* 3.2 || Headings */
+h2, h3 {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-heading);
+}
+
+/* 3.3 || Button */
+button {
+    font-weight: var(--fw-btn);
+}
+
+/* 3.4 || Button get started */
+.btn-start {
+    background: var(--clr-btn);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 5px 5px 0 var(--clr-btn-shadow);
+    color: var(--clr-white);
+    margin: 2rem 0;
+    padding: 0.75rem 2.75rem;
+}
+
+.btn-start:hover,
+.btn-start:focus {
+    background: var(--clr-btn-hover);
+    cursor: pointer;
+}
+
+/* 3.5 || Background pattern */
+.pattern {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* 3.6 || Margin auto to center the elements */
+.margin-auto {
+    margin: auto;
+}
+
+/* ============= */
+/* 4.0 || HEADER */
+/* ============= */
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding: var(--padding-container);
+}
+
+/* 4.1 || Logo */
+.header__logo {
+    width: 6.25rem;
+}
+
+/* 4.1 || Button try it */
+.header__btn {
+    background: none;
+    border: 1px solid var(--clr-btn);
+    border-radius: 1rem;
+    color: var(--clr-btn);
+    font-size: 0.75rem;
+    padding: 0.2rem 1rem;
+}
+
+.header__btn:hover,
+.header__btn:focus {
+    --clr-btn-shadow: hsla(321, 100%, 78%, 0.5);
+    border: 1px solid var(--clr-btn-hover);
+    box-shadow: 0 0 5px 0 var(--clr-btn-shadow);
+    color: var(--clr-btn-hover);
+    cursor: pointer;
+}
+
+/* ================ */
+/* 5.0 || COMMUNITY */
+/* ================ */
+.community {
+    padding: var(--padding-container);
+    text-align: center;
+}
+
+/* 5.1 || Paragraph */
+.community__p {
+    font-size: var(--fs);
+    max-width: 500px;
+    padding: 2rem 0;
+}
+
+/* 5.2 || Mockup */
+.community__mockup {
+    padding: 2rem 0;
+}
+
+/* 5.3.0 || Group */
+.community__group {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+}
+
+/* 5.3.1 || Icon */
+.community__icon {
+    width: 2rem;
+}
+
+/* 5.3.2 || Number */
+.community__nb {
+    font-size: 4rem;
+}
+
+/* 5.3.3 || Text */
+.community__text {
+    --clr-body: hsla(192, 100%, 9%, 0.5);
+    color: var(--clr-body);
+}
+
+/* =================== */
+/* 6.0 || PRESENTATION */
+/* =================== */
+.presentation {
+    text-align: center;
+}
+
+/* 6.1 || Presentation background blue */
+.presentation--bg-blue {
+    background: var(--clr-bg-blue);
+}
+
+/* 6.2 || Add padding to article presentation */
+.presentation__container {
+    padding: var(--padding-container);
+}
+
+/* 6.3 || Presentation illustration */
+.presentation__img {
+    padding: 2rem 0;
+}
+
+/* 6.4 || Presentation title */
+.presentation__title {
+    font-size: 1.25rem;
+    padding: 2rem 0;
+}
+
+/* 6.5 || Presentation paragraph */
+.presentation__p {
+    font-size: var(--fs);
+    max-width: 400px;
+}
+
+/* ============ */
+/* 7.0 || READY */
+/* ============ */
+.ready {
+    margin: 5rem 1rem 10rem;
+    text-align: center;
+}
+
+/* ============= */
+/* 8.0 || FOOTER */
+/* ============= */
+.footer {
+    background: var(--clr-bg-footer);
+    display: grid;
+}
+
+.footer, .footer a {
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.footer__contact,
+.footer__newsletter {
+    font-size: var(--fs);
+    max-width: 500px;
+    padding: var(--padding-container);
+}
+
+.footer__p {
+    line-height: 1.8;
+    margin: 0.5rem 0 2rem 0;
+}
+
+/* 8.1 || Footer newsletter */
+/* 8.1.1 || Newsletter title */
+.footer__newsletter-title {
+    font-weight: var(--fw-btn);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* 8.1.2 || Newsletter form */
+.footer__newsletter-form {
+    text-align: right;
+}
+
+/* 8.1.2.1 || Newsletter form input */
+.footer__newsletter-input {
+    border-radius: 0.5rem;
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+/* 8.1.2.2 || Newsletter form button */
+.footer__newsletter-btn {
+    background: var(--clr-btn);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--clr-white);
+    font-weight: var(--fw-btn);
+    margin: 1rem 0;
+    padding: 0.75rem 2.5rem;
+}
+
+.footer__newsletter-btn:hover,
+.footer__newsletter-btn:focus {
+    background: var(--clr-btn-hover);
+    cursor: pointer;
+}
+
+/* 8.2 || Footer contact */
+/* 8.2.1 || Contact group */
+.footer__contact-group {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* 8.2.2 || Contact title */
+.footer__contact-title {
+   font-size: 3rem;
+}
+
+/* 8.2.3 || Contact address tel & email */
+.footer__address {
+    font-style: normal;
+    margin: 2rem 0;
+}
+
+.footer__address-flex {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+/* 8.2.4 || Contact address social media icon */
+.footer__contact-social-icon {
+    display: flex;
+    font-size: 1.75rem;
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+
+.instagram:hover,
+.instagram:focus {
+    color: var(--clr-instagram);
+    cursor: pointer;
+}
+
+.facebook:hover, 
+.facebook:focus {
+    color: var(--clr-facebook);
+    cursor: pointer;
+}
+
+.twitter:hover,
+.twitter:focus {
+    color: var(--clr-twitter);
+    cursor: pointer;
+}
+
+/* ==================== */
+/* 9.0 || MEDIA QUERIES */
+/* ==================== */
+@media screen and (min-width: 1200px) {
+    /* ====================== */
+    /* 9.1 || UTILITY CLASSES */
+    /* ====================== */
+    .order-swap {
+        order: 1;
+    }
+
+    /* ===================== */
+    /* 9.2 || GENERAL STYLES */
+    /* ===================== */
+    .grid-two-column {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: 500px 500px;
+        justify-content: center;
+        margin: auto;
+        max-width: 1440px;
+        place-items: center;
+        text-align: left;
+    }
+
+    /* =================== */
+    /* 9.3 || PRESENTATION */
+    /* =================== */
+    .presentation__p {
+        padding-left: 0;
+    }
+
+    /* ============= */
+    /* 9.4 || FOOTER */
+    /* ============= */
+    .footer__newsletter {
+        margin-top: 1.25rem;
+    }
+
+    .footer__newsletter-form {
+        text-align: left;
+    }
+
+    .footer__newsletter-input {
+        display: inline;
+        margin-right: 2rem;
+        width: 55%;
+    }
+}

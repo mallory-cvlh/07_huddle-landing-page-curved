@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="mallory-cvlh">
+	<meta name="description" content="Frontend Mentor Huddle landing page with curved sections">
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
+		rel="stylesheet">
+	<!-- Title & CSS & icon -->
+	<title>Frontend Mentor | Huddle landing page with curved sections</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/5f1b63acae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- Header = logo & try it button -->
+	<header class="header margin-auto">
+		<h1>
+			<img class="header__logo" src="img/logo.svg" alt="Huddle Logo" width="240" height="39">
+		</h1>
+		<button class="header__btn" type="button">Try it free</button>
+	</header>
+
+	<main>
+		<!-- Community section -->
+		<section class="community">
+			<h2 class="community__title">Build The Community Your Fans Will Love</h2>
+			<p class="community__p margin-auto">
+				Huddle re-imagines the way we build communities. You have a voice, but so does
+				your audience. Create connections with your users as you engage in genuine discussion.
+			</p>
+			<button class="btn-start" type="button">Get Started For Free</button>
+			<picture>
+				<img class="community__mockup margin-auto" src="img/screen-mockups.svg" alt="Screen Mockups"
+					width="1035" height="739" loading="lazy">
+			</picture>
+			<article class="flex-group">
+				<figure class="community__group">
+					<img class="community__icon" src="img/icon-communities.svg" alt="Community Icon" width="47"
+						height="41">
+					<figcaption>
+						<h3 class="community__nb">1.4k+</h3>
+						<p class="community__text">Communities Formed</p>
+					</figcaption>
+				</figure>
+				<figure class="community__group">
+					<img class="community__icon" src="img/icon-messages.svg" alt="Message Icon" width="48" height="40">
+					<figcaption>
+						<h3 class="community__nb">2.7m+</h3>
+						<p class="community__text">Messages Sent</p>
+					</figcaption>
+				</figure>
+			</article>
+		</section>
+		<!-- Presentation -->
+		<section class="presentation">
+			<h2 class="sr-only">About the community</h2>
+			<!-- Grow & pattern -->
+			<picture>
+				<source media="(min-width: 576px)" srcset="img/bg-section-top-desktop-1.svg">
+				<img class="pattern" src="img/bg-section-top-mobile-1.svg" alt="top">
+			</picture>
+
+			<article class="presentation__container presentation--bg-blue">
+				<figure class="grid-two-column">
+					<img class="presentation__img order-swap" src="img/illustration-grow-together.svg"
+						alt="Illustration Grow Together" width="1023" height="837">
+					<figcaption>
+						<h2 class="presentation__title">Grow Together</h2>
+						<p class="presentation__p margin-auto">
+							Generate meaningful discussions with your audience and build a strong, loyal community.
+							Think of the insightful conversations you miss out on with a feedback form.
+						</p>
+					</figcaption>
+				</figure>
+			</article>
+
+			<picture>
+				<source media="(min-width: 576px)" srcset="img/bg-section-bottom-desktop-1.svg">
+				<img class="pattern" src="img/bg-section-bottom-mobile-1.svg" alt="bottom">
+			</picture>
+			<!-- Conversation section -->
+			<article class="presentation__container">
+				<figure class="grid-two-column">
+					<img class="presentation__img" src="img/illustration-flowing-conversation.svg"
+						alt="Illustration Flowing Conversation" width="1125" height="800">
+					<figcaption>
+						<h2 class="presentation__title">Flowing Conversations</h2>
+						<p class="presentation__p margin-auto">
+							You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+							just-in-time loading for a more natural flow.
+						</p>
+					</figcaption>
+				</figure>
+			</article>
+			<!-- User & pattern -->
+			<picture>
+				<source media="(min-width: 576px)" srcset="img/bg-section-top-desktop-2.svg">
+				<img class="pattern" src="img/bg-section-top-mobile-2.svg" alt="top">
+			</picture>
+
+			<article class="presentation__container presentation--bg-blue">
+				<figure class="grid-two-column">
+					<img class="presentation__img  order-swap" src="img/illustration-your-users.svg"
+						alt="Illustration Your Users" width="1077" height="813">
+					<figcaption>
+						<h2 class="presentation__title">Your Users</h2>
+						<p class="presentation__p margin-auto">
+							It takes no time at all to integrate Huddle with your app's authentication solution. This
+							means,
+							once signed in to your app, your users can start chatting immediately.
+						</p>
+					</figcaption>
+				</figure>
+			</article>
+
+			<picture>
+				<source media="(min-width: 576px)" srcset="img/bg-section-bottom-desktop-2.svg">
+				<img class="pattern" src="img/bg-section-bottom-mobile-2.svg" alt="bottom">
+			</picture>
+		</section>
+		<!-- Ready section -->
+		<section class="ready">
+			<h2>Ready To Build Your Community?</h2>
+			<button class="btn-start" type="button">Get Started For Free</button>
+		</section>
+	</main>
+	<!-- Footer & pattern -->
+	<picture>
+		<source media="(min-width: 576px)" srcset="img/bg-footer-top-desktop.svg">
+		<img class="pattern" src="img/bg-footer-top-mobile.svg" alt="top">
+	</picture>
+
+	<footer id="footer" class="footer">
+		<div class="grid-two-column">
+			<!-- Newsletter -->
+			<article class="footer__newsletter order-swap margin-auto">
+				<h2 class="footer__newsletter-title">Newsletter</h2>
+				<p class="footer__p">
+					To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never
+					send you spam or pass on your email address
+				</p>
+				<form class="footer__newsletter-form" action="/" method="get">
+					<input class="footer__newsletter-input" type="email" name="email" required autocomplete="email">
+					<button class="footer__newsletter-btn" type="submit">Subscribe</button>
+				</form>
+			</article>
+			<!-- Contact -->
+			<article class="footer__contact margin-auto">
+				<figure class="footer__contact-group">
+					<img src="img/icon-messages-footer.svg" alt="message icon footer" width="48" height="40">
+					<figcaption>
+						<h2 class="footer__contact-title">Huddle</h2>
+					</figcaption>
+				</figure>
+				<p class="footer__p">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+					vestibulum a, ultrices quis sem.
+				</p>
+				<address class="footer__address">
+					<figure class="footer__address-flex">
+						<img src="img/icon-phone.svg" alt="Phone Icon" width="18" height="18">
+						<figcaption>
+							Phone: <a href="#footer">+1-543-123-4567</a>
+						</figcaption>
+					</figure>
+					<figure class="footer__address-flex">
+						<img src="img/icon-email.svg" alt="Phone Icon" width="20" height="16">
+						<figcaption>
+							<a href="#footer">example@huddle.com</a>
+						</figcaption>
+					</figure>
+					<!-- Social media icon -->
+					<div class="footer__contact-social-icon">
+						<a href="#footer" class="facebook fa-brands fa-square-facebook"></a>
+						<a href="#footer" class="instagram fa-brands fa-instagram"></a>
+						<a href="https://twitter.com/MalloryCvlh" target="_blank"
+							class="twitter fa-brands fa-square-twitter"></a>
+					</div>
+				</address>
+			</article>
+		</div>
+	</footer>
+
+</body>
+
+</html>
